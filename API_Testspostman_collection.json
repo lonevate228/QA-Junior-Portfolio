@@ -1,0 +1,32 @@
+{
+  "info": {
+    "_postman_id": "1234-5678-qa-junior",
+    "name": "QA Junior Sample API Tests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Регистрация пользователя",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"password123\"\n}"
+        },
+        "url": {
+          "raw": "https://example.com/api/register",
+          "protocol": "https",
+          "host": ["example", "com"],
+          "path": ["api", "register"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
